@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images3.alphacoders.com/966/966315.png);
+  background-size: cover;
+  list-style: none;
+}
+
+.card1 img {
+  width: 30pvw;
+  height: 30vh;
+}
