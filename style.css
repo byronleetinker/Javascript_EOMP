@@ -56,6 +56,7 @@ h1 {
   justify-content: center;
   height: 30px;
   margin-bottom: 5%;
+  
 }
 
 .login {
@@ -73,16 +74,20 @@ a {
   border-width: 5px;
   width: 7vw;
   height: 5vh;
+  font-size: 15px;
   color: #1e1e1e;
   font-weight: bolder;
+  background: linear-gradient(90deg, lightblue, lightgreen);
 }
 
 .but2 {
   border-width: 5px;
   width: 7vw;
   height: 5vh;
+  font-size: 15px;
   color: #1e1e1e;
   font-weight: bolder;
+  background: linear-gradient(90deg, lightblue, lightgreen);
 }
 
 .login a:hover {

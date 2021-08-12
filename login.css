@@ -63,6 +63,7 @@ h1 {
     height: 5vh;
     color: #1e1e1e;
     font-weight: bolder;
+    background: linear-gradient(90deg, lightblue, lightgreen);
   }
   
 

@@ -24,7 +24,10 @@ img {
   align-items: center;
   text-align: center;
   margin-top: 10%;
-  color: whitesmoke ;
+}
+
+a {
+  color: #1e1e1e ;
 }
 
 .but1 {
@@ -38,7 +41,7 @@ img {
 
 .but1 a:hover {
     transition: 0.3s ease-in;
-    color: black;
+    color:lightskyblue;
   }
 
 .info {
