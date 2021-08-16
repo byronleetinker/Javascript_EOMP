@@ -9,13 +9,33 @@
   </head>
   <body>
     <div class="Products">
-      <h1 class="card-container-heading">
-        PokeProducts<span
-          class="iconify"
-          data-icon="mdi:registered-trademark"
-        ></span>
-      </h1>
+      <h1 class="card-container-heading">PokeProducts</h1>
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-link">
+            <a href="#" class="navbar-anchor"
+              ><span class="iconify" data-icon="carbon:add-alt"></span></a
+            >Add
+          </li>
+          <li class="navbar-link">
+            <a href="#" class="navbar-anchor"
+              ><span class="iconify" data-icon="ri:delete-bin-5-fill"></span></a
+            >Delete
+          </li>
+          <li class="navbar-link">
+            <a href="#" class="navbar-anchor"
+              ><span class="iconify" data-icon="akar-icons:edit"></span></a
+            >Edit
+          </li>
+        </ul>
+
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <i class="fas fa-shopping-cart"></i>
+      </nav>
       <div class="container">
+        <p class="welcome"></p>
         <div class="card">
           <div class="card-header">Pikachu</div>
           <img src="./pika-removebg-preview.png" alt="Form" />
@@ -26,6 +46,7 @@
               Yellow. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -38,6 +59,7 @@
               Brown. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -50,6 +72,7 @@
               Blue. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -62,6 +85,7 @@
               Green. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
       </div>
@@ -77,6 +101,7 @@
               Orange. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
 
@@ -90,6 +115,7 @@
               Pink. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -102,6 +128,7 @@
               Brown. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
 
@@ -115,22 +142,16 @@
               Black and Red. <br />
               50cm x 50cm.</span
             >
+            <button class="add">Add to cart</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="icons"><span class="iconify" data-icon="carbon:add-alt"></span><span class="iconify" data-icon="ri:delete-bin-5-fill"></span><span class="iconify" data-icon="akar-icons:edit"></span></div>
+    <script src="./main.js"></script>
     <script
       src="https://kit.fontawesome.com/63e7421244.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function toggleNavbar() {
-        document
-          .getElementsByClassName("navbar-links")[0]
-          .classList.toggle("active");
-      }
-    </script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   </body>
 </html>
