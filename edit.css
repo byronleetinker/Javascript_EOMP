@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(https://images3.alphacoders.com/966/966315.png);
+    background-size: cover;
+    list-style: none;
+  }
+
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    background: transparent;
+    position: absolute;
+    margin-top: 3%;
+    left: -50%;
+    width: 10vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 20px;
+    font-family: sans-serif;
+    transition: all 0.3s linear;
+  }
+  
+  .navbar-links.active {
+    top: 0;
+    left: 0;
+  }
+  
+  .navbar-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 30px;
+    color: whitesmoke;
+    margin-top: 5px;
+  }
+  .navbar-links a {
+    color: whitesmoke;
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+  
+  .navbar-links li {
+    color: whitesmoke;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    flex-direction: column;
+  }
+  
+  .navbar-links.active {
+    top: 0;
+    left: 0;
+  }
+  
+  .navbar-links :hover {
+    transition: 0.3s ease-in;
+    color: blue;
+  }
+  
+  .navbar-button :hover {
+    transition: 0.3s ease-in;
+    color: blue;
+  }

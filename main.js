@@ -1,3 +1,9 @@
+fetch("https://warm-hamlet-31837.herokuapp.com/get-product/")
+.then(res => res.json())
+.then(data => {
+  console.log(data);
+})
+
 console.log(document.querySelector(".welcome"));
 let welcomeName = document.querySelector(".welcome");
 
@@ -47,8 +53,7 @@ form.addEventListener("submit", (e) => {
 welcomeName.innerHTML = "Welcome " + username;
 
 
-
-function deleteProduct(index) {
+function toggledeleteProduct(index) {
   console.log(index);
   // http://127.0.0.1:5000/delete-product/${index}/
   let delConfirm = confirm("Are you sure you want to delete this product?");
@@ -62,7 +67,7 @@ let cart = [];
 
 let item_container = document.querySelector(".items");
 
-fetch("http://127.0.0.1:5000/get-products/").then((request) => {
+fetch("http://127.0.0.1:5000/get-product/").then((request) => {
   request.json().then((obj) => {
     // console.log(obj);
     data = obj.data;
@@ -82,16 +87,16 @@ fetch("http://127.0.0.1:5000/get-products/").then((request) => {
   });
 });
 
-function addToCart(index) {
-  cart.push(index);
-  //   console.log(cart);
-  let add_btn = document.querySelector(`.add-${index}`);
+function toggleaddToCart(id) {
+  cart.push(id);
+    console.log(cart);
+  let product = products.find(item => {
+  return `.add-${id}`});
   //   console.log(add_btn);
-  add_btn.style.display = "none";
   populateCart();
 }
 
-function showCart() {
+function toggleshowCart() {
   document.querySelector(".cart").classList.toggle("active");
 }
 
@@ -119,14 +124,6 @@ function populateCart() {
           }
         });
       });
-      createTotal(total_cost);
     });
   });
-}
-
-function createTotal(cost) {
-  let total_container = document.querySelector(".cart");
-  total_container.innerHTML += `<div class="total-div">
-  <p class="total-p">Total : ${cost}</p>
-  </div>`;
 }
